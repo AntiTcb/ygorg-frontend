@@ -1,38 +1,41 @@
 {
-    "name": "ygorg-frontend",
-    "type": "module",
-    "version": "0.0.1",
-    "scripts": {
-        "dev": "astro dev",
-        "start": "astro dev",
-        "build": "astro check && astro build",
-        "preview": "astro preview",
-        "astro": "astro"
-    },
-    "dependencies": {
-        "@astrojs/check": "^0.9.4",
-        "@astrojs/svelte": "^5.7.2",
-        "@astrojs/tailwind": "^5.1.2",
-        "astro": "^4.16.7",
-        "svelte": "^5.1.4",
-        "tailwindcss": "^3.4.14",
-        "typescript": "^5.6.3"
-    },
-    "devDependencies": {
-        "@sveltejs/vite-plugin-svelte": "^4.0.0-next.6",
-        "@tailwindcss/forms": "^0.5.9",
-        "@tailwindcss/typography": "^0.5.15",
-        "autoprefixer": "^10.4.20",
-        "clsx": "^2.1.1",
-        "postcss-import": "^16.1.0",
-        "postcss-load-config": "^6.0.1",
-        "prettier": "^3.3.3",
-        "prettier-plugin-astro": "^0.14.1",
-        "tailwind-merge": "^2.5.4",
-        "tailwind-variants": "^0.2.1",
-        "tailwindcss-animate": "^1.0.7"
-    },
-    "overrides": {
-        "@sveltejs/vite-plugin-svelte": "^4.0.0-next.6"
-    }
+  "name": "ygorg-frontend",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write --plugin prettier-plugin-astro --plugin prettier-plugin-svelte --plugin prettier-plugin-tailwindcss .",
+    "format:check": "prettier --check --plugin prettier-plugin-astro --plugin prettier-plugin-svelte --plugin prettier-plugin-tailwindcss ."
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/svelte": "^5.7.2",
+    "@astrojs/tailwind": "^5.1.2",
+    "astro": "^4.16.7",
+    "svelte": "^5.1.4",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^4.0.0-next.6",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
+    "autoprefixer": "^10.4.20",
+    "clsx": "^2.1.1",
+    "postcss-import": "^16.1.0",
+    "postcss-load-config": "^6.0.1",
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "tailwindcss": "^3.4.14",
+    "tailwind-merge": "^2.5.4",
+    "tailwind-variants": "^0.2.1",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "overrides": {
+    "@sveltejs/vite-plugin-svelte": "^4.0.0-next.6"
+  }
 }
